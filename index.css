@@ -1,0 +1,38 @@
+.main {
+    color: red;
+}
+.exclamation::placeholder {
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+}
+.star-rating {
+    direction: rtl;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    color: #030303;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 0 5px;
+}
+
+.star-rating input[type="radio"]:checked ~ label,
+.star-rating input[type="radio"]:checked ~ label ~ label {
+    color: #ffd700;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffd700;
+}
